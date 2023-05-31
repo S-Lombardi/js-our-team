@@ -51,7 +51,7 @@ for( let i=0; i<team.length; i++ ){
     }
 
     let element_person = `<div>
-                            <div> ${person.image}</div>
+                            <img src="./img/${person.image}">
                             <div> ${person.name} </div>
                             <div> ${person.role} </div> <br>
                         </div>`
