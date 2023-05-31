@@ -35,19 +35,32 @@ const team = [
 
 ];
 
+//Recupero contenitore nel dom
+const team_container = document.getElementById('team-container');
+
 
 //ciclo for per ricavare ogni oggetto di cui è composto
 for( let i=0; i<team.length; i++ ){
-
+    
     //person = oggetto dell'array team
     let person = team[i];
-
+    
     //ciclo for-in per visualizzare proprietà e valori delle persone nel team 
     for(let property in person){
-        console.log(`Proprietà:${property} / Valore:${person [property]}` )
+        console.log(`Proprietà:${property} / Valore:${person[property]}`);
     }
 
+    let element_person = `<div>
+                            <div> ${person.image}</div>
+                            <div> ${person.name} </div>
+                            <div> ${person.role} </div> <br>
+                        </div>`
+
+    team_container.innerHTML += element_person;
+
 }
+
+
 
 
 
