@@ -50,11 +50,13 @@ for( let i=0; i<team.length; i++ ){
         console.log(`Proprietà:${property} / Valore:${person[property]}`);
     }
 
-    let element_person = `<div>
-                            <img src="./img/${person.image}">
-                            <div> ${person.name} </div>
-                            <div> ${person.role} </div> <br>
-                        </div>`
+    let element_person = `<div class="col-16">
+                           <div class="card">
+                                <img src="./img/${person.image}">
+                                <div class="name-text"> ${person.name} </div>
+                                <div class="role-text"> ${person.role} </div>
+                            </div>
+                         </div>`
 
     team_container.innerHTML += element_person;
 

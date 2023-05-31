@@ -3,8 +3,91 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(236, 233, 228);
+    font-family: 'Mulish', sans-serif;
+}
 
-#team-container{
-    
+/* UTILITA */
+
+.font-prata{
+    font-family: 'Prata', serif;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+/* FINE */
+
+/* LAYOUT */
+.container{
+    width: 70%;
+    margin: auto;
+    min-height: 100px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 
 }
+
+.col-16{
+    width: calc(100% / 3 - 20px );
+    margin: 10px;
+}
+/* FINE LAYOUT */
+
+
+/* PRESENTATION TEAM */
+.our-team{
+    margin: 70px 150px 25px 150px;
+    text-align: center;
+}
+
+.our-team div{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(69, 61, 49);
+
+}
+
+.our-team p{
+    line-height: 25px;
+    color: rgb(83, 75, 63);
+}
+
+/* PRESENTATION TEAM */
+
+
+
+/* CARD TEAM */
+#team-container{
+    margin-bottom: 50px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.card img{
+    width: 100%;
+}
+
+.name-text{
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'Prata', serif;
+    color: rgb(123, 111, 94);
+}
+
+.role-text{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: rgb(123, 111, 94);
+}
+/* FINE CARD TEAM */
