@@ -35,4 +35,22 @@ const team = [
 
 ];
 
-console.log(team);
+
+//ciclo for per ricavare ogni oggetto di cui è composto
+for( let i=0; i<team.length; i++ ){
+
+    //person = oggetto dell'array team
+    let person = team[i];
+
+    //ciclo for-in per visualizzare proprietà e valori delle persone nel team 
+    for(let property in person){
+        console.log(`Proprietà:${property} / Valore:${person [property]}` )
+    }
+
+}
+
+
+
+
+
+
