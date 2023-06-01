@@ -44,11 +44,15 @@ for( let i=0; i<team.length; i++ ){
     
     //person = oggetto dell'array team
     let person = team[i];
+
+    console.log(person.name)
+    console.log(person.role)
+    console.log(person.image)
     
-    //ciclo for-in per visualizzare proprietà e valori delle persone nel team 
-    for(let property in person){
-        console.log(`Proprietà:${property} / Valore:${person[property]}`);
-    }
+    // //ciclo for-in per visualizzare proprietà e valori delle persone nel team 
+    // for(let property in person){
+    //     console.log(`Proprietà:${property} / Valore:${person[property]}`);
+    // }
 
     let element_person = `<div>
                             <img src="./img/${person.image}">
